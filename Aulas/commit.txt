@@ -1,0 +1,5 @@
+git commit --amend: altera o ultimo commit feito.
+git commit --amend -m "Nova mensagem": altera o commit sem abrir o editor de texto.
+git reset --soft key commit: restaura para o commit desejado. //changes to be commited
+git reset --mixed key commit: restaura para o commit desejado porém, sem ter adicionado os arquivos. //untracked files
+git reset --hard key commit: restaura os arquivos para o commit desejado e apaga os demais.
