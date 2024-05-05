@@ -19,7 +19,7 @@ if(carro == 1){
     }
 }else{
     preço = dias * 150
-    if(km < 200){
+    if(km <= 200){
         preço += km * 0.30
     }else{
         preço += km * 0.25
