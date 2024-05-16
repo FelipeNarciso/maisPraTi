@@ -6,4 +6,4 @@ git reset --hard key commit: restaura os arquivos para o commit desejado e apaga
 git branch: Lista todas as branches presentes no repositório.
 git checkout [branch]: Muda para a branch especificada.
 git checkout -b "Nome da branch": cria uma nova branch e vai diretamente para ela.
-git branch -d (nome da branch): deleta a branch.
+git branch -d (nome da branch): deleta a branch. 

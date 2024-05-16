@@ -162,3 +162,4 @@ function soma(...param){
     return resultado
 }
 console.log(soma(3, 8, 5, 7))
+ 
