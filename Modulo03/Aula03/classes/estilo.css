@@ -1,0 +1,39 @@
+#principal{
+    background-color: rgb(95, 143, 220
+    );
+}
+.cor-paragrafo{
+    color: brown;
+}
+#destaque{
+    color: aliceblue;
+}
+#topo{
+    border: 3px solid green;
+}
+.produtos{
+    border: 3px solid black;
+}
+#rodape{
+    background-color: azure;
+}
+#assitanura{
+    background: pink;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:visited{  /*links que já foram acessados */
+    color:rgb(76, 209, 83);
+   
+}
+ a:hover{  /*ao passar o mouse em cima */
+    color: orange;
+    cursor: crosshair;
+}
+ a:active{ /*no exato momento que são clicados*/
+    color: pink;
+    text-transform: uppercase;
+    cursor: crosshair;
+}

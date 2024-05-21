@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+#tabela{
+    border: 3px solid black;
+   margin: auto;
+}
+#top{
+    color: black;
+}    
+.marcas{
+    border: 3px solid black;
+    
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+a:hover{
+    color: blue;
+}
