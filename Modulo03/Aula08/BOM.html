@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Object Model</title>
+    <script>
+        // let janela
+        // function popUp(){
+        //     janela = window.open('https://www.apple.com' , 'nova janela' , 'width=200px')
+        // }
+
+        // function closePopUP(){
+        //     janela.close()
+        // }
+
+        // let heigth = window.screen.availHeight
+        // let width = window.screen.availWidth
+
+        // document.write('Altura do navegador:' + heigth + '<br>')
+        // document.write('Largura do navegador:' + width)
+
+        // window.setTimeout(()=>{
+        //     document.write('Grêmio <br>')
+        // }, 1000)
+
+        let i = 10
+
+        let x = window.setInterval(() =>{
+            document.write(i + '</br>');
+            i--;
+            if(i === 0) {clearInterval(x)} 
+        }, 1000)
+
+        // let i = 10
+        // let x = window.setInterval(() => {
+        //     document.write(i + '</br>'); 
+        //     i--;
+        //     if(i===0) {clearInterval(x)}
+        // }, 1000)
+    </script>
+</head>
+<body>
+    <!-- <button onclick="popUp()">Abrir Janela</button>
+    <button onclick="closePopUP()">Fechar Janela</button>
+    <button onclick="window.print()">Imprimir página</button> -->
+
+    <!-- <button onclick="window.location.href = 'https://www.apple.com'"> Acessar</button> -->
+
+
+</body>
+</html>
