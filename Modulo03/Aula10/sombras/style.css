@@ -1,0 +1,12 @@
+#box{
+    width: 200px ;
+    height: 200px ;
+    padding: 10px;
+    margin: 20px;
+    background: rgb(44, 44, 135);
+    box-shadow: 0px 0px 15px black;
+}
+#box h1{
+    color: white;
+    text-shadow: 20px 20px 5px black;
+}

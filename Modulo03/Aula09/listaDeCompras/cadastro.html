@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header id="topo">
+        <nav>
+            <ul>
+                <li>
+                    <a href="cadastro.html">Adicionar</a>
+                    <a href="lista.html">Ver lista Completa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <h1 id="txtAdicionar">Adicione um novo produto </h1>
+    
+        <section id="adicionarProduto">
+                Nome <input type="text" name="txtProduto" id="txtProduto" autocomplete="off">
+                Quantidade <input type="number" name="qtdProduto" id="qtdProduto" value="1" min="1">
+        </section>
+    
+        <section id="adicionar">
+            <button type="submit" value="Adicionar" onclick="registerLista()">
+        </section>
+        <script src="interação.js"></script>
+</body>
+</html>

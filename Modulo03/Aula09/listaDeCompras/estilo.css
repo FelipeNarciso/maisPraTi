@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#topo{
+    background-color: aqua;
+    height: 70px;
+}
+
+nav ul li{
+   text-align: center;
+   padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font: 30px normal Arial;
+    margin: 80px;
+    padding-top: 20px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#txtAdicionar{
+    text-align: center;
+    padding-top: 50px;
+    font: 50px normal Arial;
+}
+
+#adicionarProduto{
+    padding-top: 40px;
+    padding-left: 32%;
+    font: 18px normal Arial;
+}
+
+#adicionarProduto input{
+    display: block;
+    text-align: center;
+    font: normal 18px Arial;
+}
+#adicionar{
+    text-align: center;
+    padding-top: 20px;
+}
+#adicionar button{
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    font: 30px normal Arial;
+}
+
+#adicionar button:hover{
+    background-color: rgb(74, 211, 74);
+}
+
+#lista h1{
+    text-align: center;
+    padding-top: 50px;
+    font: 50px normal Arial;
+}

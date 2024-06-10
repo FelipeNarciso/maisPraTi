@@ -1,0 +1,11 @@
+#box{
+    width: 200px;
+    height: 200px;
+    /* background: url(/Modulo03/Aula10/pica-pau.jpeg); */
+}
+
+#box h1{
+    /* background: rgb(225, 225, 225, 0.5); */
+    /* background: radial-gradient(red , green , yellow); */
+    background: linear-gradient(red , green , yellow);
+}
