@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator</title>
+
+    <script>
+        function* myGenerator(){
+            let i = 0
+            while(true){
+                yield i++ // return que não termina a função (pausa)
+            }
+        }
+
+        let generator = myGenerator()
+
+        let generatorValue = generator.next()
+        console.log(generatorValue)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

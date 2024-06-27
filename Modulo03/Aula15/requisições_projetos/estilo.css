@@ -1,0 +1,38 @@
+#titulo{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+#buttons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 5%;
+}
+
+#conteudo{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    background-color: aliceblue;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    background-color: aliceblue;
+    width: 80%;
+}
+
+#btn1:active{
+    background-color: blue;
+}
+
+#btn2:active{
+    background-color: blue;
+}
+
+#btn2:active{
+    background-color: blue;
+}
