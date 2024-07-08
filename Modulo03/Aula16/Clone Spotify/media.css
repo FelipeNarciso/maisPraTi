@@ -1,0 +1,42 @@
+@media only screen and (max-width: 768px) {
+    /* #navbar{
+        margin-left: 0 !important;
+    } */
+
+    /* Section01 */
+    #section01{
+        padding-top: 35%;
+    }
+
+   .carroselTxt h1{
+        font-size: 30px;
+   }
+   
+   .btnSection01{
+        gap: 10px;
+        font-size: 10px;
+    }
+
+    /* Section02 */
+    #section02{
+        display: block;
+    }
+
+    #imgSection02 img{
+        width: 200px;
+    }
+
+    .imgSection02-linha{
+        display: flex;
+        justify-content: center;
+    }
+
+    #txtSection02{
+        width: 100%;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+    }
+
+}
+  

@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(./images/capa.png),
+                url(./images/ruido.png),
+                linear-gradient(50deg,#ff4169,#7c26f8);
+        background-attachment: fixed;
+        font-family: Helvetica,Arial,sans-serif;
+}
+
+#container{
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 10px ;
+    padding-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.navbar-toggler{
+    background-color: white;
+}
+#logo{
+    width: 150px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+    z-index: 1000;
+}
+
+#navbar a {
+    text-decoration: none ;
+    color: white;
+    padding: 10px;
+}
+
+#navbar a:hover{
+    font-weight: 700;
+}
+
+/* Section01 */
+#section01{
+    padding-top: 15%;
+}
+
+.carroselTxt{
+    display: flex;
+    justify-content: center;
+}
+
+.carroselTxt h1{
+    font-size: 70px;
+    color: white;
+    font-weight: 800;
+
+}
+
+.btnSection01{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 5%;
+}
+
+#btnFree{
+    cursor: pointer;
+    border-radius: 20px 20px 20px;
+    background-color: RGB(123, 37, 248);
+    padding: 8px;
+    color: white;
+}
+
+#btnPremium{
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 20px 20px 20px;
+    padding: 7px;
+    color: white;
+}
+
+#btnAgora{
+    border-radius: 20px 20px 20px;
+    background-color: RGB(123, 37, 248);
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Section02 */
+#section02{
+    background: white;
+    margin-top: 30%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#imgSection02 img{
+    width: 250px;
+    padding: 10px;
+}
+
+.imgSection02-linha{
+    display: flex;
+}
+
+#txtSection02{
+    width: 50%;
+}
+
+#txtSection02 h1{
+    color: RGB(123, 37, 248);
+    font-weight: 700;
+}
+
+#txtSection02 h4{
+    color: RGB(123, 37, 248);
+    font-weight: 700;
+}
+
+/* Section03 */
+#section03{
+    display: flex;
+}
+
+#imgSection03{
+    transform: rotate(30deg);
+}
+
+#imgSection03 img{
+    width: 200px;
+}
+
+#txtSection03 p{
+    width: 80%;
+}
+
+#txtSection03{
+    padding-top: 10px;
+    color: white;
+    width: 50%;
+    padding-left: 10%;
+}
+
+/* Footer */
+footer{
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    gap: 10%;
+    padding-top: 10px;
+}
+
+#imgFooter{
+    padding-left: 10px;
+}
+
+#imgFooter img{
+    width: 150px;
+}
+
+.txtFooter h5{
+    color: gray;
+    font-size: 15px;
+}
+
+.txtFooter p{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#imgRedesSociais img{
+    cursor: pointer;
+}
+

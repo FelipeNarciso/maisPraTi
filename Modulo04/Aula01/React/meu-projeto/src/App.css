@@ -1,0 +1,24 @@
+.topo{
+  background-color: burlywood;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbarLink{
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+}
+
+.navbarLink:hover{
+  color: white;
+}
+
+.footer{
+  background-color: black;
+  color: white;
+  bottom: 0%;
+  position: absolute;
+  width: 100%;
+}
