@@ -1,60 +1,54 @@
 import { useState } from "react"
+import './Aba.module.css'
 
-function aba1(){
-        return(
-            <ul>
-                <li>Palavra1</li>
-                <li>Palavra2</li>
-            </ul>
-        )
-    }
-
-    function aba2(){
-        return(
-            <ul>
-                <li>Palavra4</li>
-                <li>Palavra5</li>
-                <li>Palavra6</li>
-            </ul>
-        )
-    }
-
-    function aba3(){
-        return(
-            <ul>
-                <li>Palavra7</li>
-                <li>Palavra8</li>
-                <li>Palavra9</li>
-            </ul>
-        )
-    }
-
-    function aba4(){
-        return(
-            <ul>
-                <li>Palavra10</li>
-                <li>Palavra11</li>
-                <li>Palavra12</li>
-                <li>Palavra13</li>
-            </ul>
-        )
-    }
-
+const conteudos = [
+    [
+        'Conteudo 0',
+        'Conteudo 1',
+        'Conteudo 3',
+    ],
+    [
+        'Conteudo 4',
+        'Conteudo 5',
+        'Conteudo 6',
+    ],
+    [
+        'Conteudo 7',
+        'Conteudo 8',
+        'Conteudo 9',
+    ],
+   
+]
 
 function Abas(){
-    const [troca , setTroca] = useState('')
+    const [estadoAtual , setEstado] = useState(0)
     
     return (
+        <>
+            <div>
+                <header>
+                    <img src="" alt="imagem" />
+                    <h1>Aula +praTi - React-Js</h1>
+                    <p>Exercicio para treinar useState</p>
+                </header>
+            </div>
 
-        <div>
-            <button onClick={() => {setTroca(aba1)}}>Teste1</button> 
-            <button onClick={() => {setTroca(aba2)}}>Teste2</button>  
-            <button onClick={() => {setTroca(aba3)}}>Teste3</button> 
-            <button onClick={() => {setTroca(aba4)}}>Teste4</button>
+            <div id="abas">
+                <nav>
+                    <button onClick={() => setEstado(0)}>Botão 1</button>
+                    <button onClick={() => setEstado(1)}>Botao 2</button>
+                    <button onClick={() => setEstado(2)}>Botão 3</button>
+                </nav>
+            </div>
 
-            
-            <p>{troca}</p>
-        </div>
+            <div id="conteudo">
+                <ul>
+                   {conteudos[estadoAtual].map((item) =>(
+                        <li key = {item}>{item}</li>
+                   ))}
+                </ul>
+            </div>
+        </>
     )
 
 }
