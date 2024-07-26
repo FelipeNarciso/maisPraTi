@@ -2,7 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
 
-// Define o estilo do container principal
+
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ const Container = styled.div`
   margin: 50px auto;
 `
 
-// Define o estilo do título
+
 const Title = styled.h2`
   color: #333;
   margin-bottom: 20px;
@@ -23,7 +23,7 @@ const Title = styled.h2`
   text-align: center;
 `
 
-// Define o estilo do campo de entrada
+
 const Input = styled.input`
   margin-bottom: 20px;
   padding: 12px;

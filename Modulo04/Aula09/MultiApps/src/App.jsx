@@ -1,16 +1,20 @@
-import { useState } from 'react'
 import './App.css'
 import LanguageTranslator from './components/LanguageTranslator'
 import MovieSearchEngine from './components/MovieSearchEngine'
+import QrCodeGenerator from './components/QrCodeGenerator'
+import IPAdressFinder from './components/IPAdressFinder'
+import Login from './components/Login'
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
         <LanguageTranslator/>
         <MovieSearchEngine/>
+        <QrCodeGenerator/>
+        <IPAdressFinder/>
+        <Login/>
       </div>
     </>
   )
