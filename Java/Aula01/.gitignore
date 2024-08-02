@@ -27,3 +27,15 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Pasta do IntelliJ IDEA
+.idea/
+
+# Arquivos de módulo
+*.iml
+
+# Pasta de compilação
+out/
+
+# Arquivos compilados
+*.class
