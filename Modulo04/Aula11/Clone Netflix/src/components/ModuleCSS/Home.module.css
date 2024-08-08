@@ -3,7 +3,46 @@
     url("https://assets.nflxext.com/ffe/siteui/vlv3/21a8ba09-4a61-44f8-8e2e-70e949c00c6f/e54a23b9-5f4f-4218-ba09-8e62ba01f9cc/BR-pt-20240722-POP_SIGNUP_TWO_WEEKS-perspective_WEB_f47ff160-2a29-4b8f-849f-20fecdea9010_large.jpg");
 }
 
-.header{
+.imgLogo{
+    width: 15%;
+}
+
+@media (max-width: 800px) {
+    .imgLogo{
+        width: 35%;
+    }
+}
+
+.btnEntrar{
+    background-color: red;
+    transition: 0.3s ease;
+}
+
+.btnEntrar:hover{
+    background-color: rgb(255, 0, 0, 0.8);
+}
+
+.btnVamosLa{
+    background-color: red;
+    transition: 0.3s ease;
+}
+
+.btnVamosLa:hover{
+    cursor: pointer;
+    background-color: rgb(255, 0, 0, 0.8);
+}
+
+.gradient{
+    background: radial-gradient(circle, rgb(114, 18, 51) 20%, rgb(8, 21, 73) 50%, rgb(0, 0, 0, 0.8) 70%);
+}
+
+.imgGradient{
+    width: 5%;
+    height: 5%;
+}
+
+
+/* .header{
     display: flex;
     justify-content: center;
     gap: 50%;
@@ -155,4 +194,4 @@
 .LinkPlanoPadrao svg{
     color: rgb(105, 105, 255);
     padding-left: 1%;
-}
+} */
