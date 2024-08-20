@@ -1,18 +1,8 @@
-// Importa hooks e componentes do React e bibliotecas externas.
-import { useState, useEffect } from "react";
-import {Route, Routes, Navigate, useNavigate, useLocation, Link} from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import styled from "styled-components";
-import {FaQrcode, FaSearch, FaTasks, FaRegQuestionCircle, FaGlobeAmericas, FaNetworkWired, FaBars, FaArrowLeft} from "react-icons/fa";
-import "./App.css";
-import QRCodeGenerator from "./components/QRCodeGenarator";
-import IPAddressFinder from "./components/IPAddressFinder";
-import Login from "./components/Login";
-import LanguageTranslator from "./components/LanguageTranslator";
-import MovieSearchEngine from "./components/MovieSearchEngine";
-import QuizApp from "./components/QuizApp";
-import TodoApp from "./components/TodoApp";
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Link, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import {FaQrcode, FaSearch, FaTasks, FaRegQuestionCircle, FaGlobeAmericas, FaNetworkWired, FaBars} from "react-icons/fa";
 
 // Estiliza o contêiner principal do aplicativo.
 const AppContainer = styled.div`
@@ -186,118 +176,46 @@ const CustomCarousel = styled(Carousel)`
   }
 `;
 
-// Define o componente principal do aplicativo.
-const App = () => {
-  // Cria estados para autenticação, visibilidade da barra de navegação, componente atual, e índice do carrossel.
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+function PaginaInicial() {
   const [isNavBarOpen, setIsNavBarOpen] = useState(false);
   const [currentComponent, setCurrentComponent] = useState(null);
-  const [carouselIndex, setCarouselIndex] = useState(0);
-  const navigate = useNavigate(); // Hook para navegação.
-
-  // Efeito colateral que redireciona para a página de login se não estiver autenticado.
-  useEffect(() => {
-    if (!isAuthenticated) {
-      navigate("/");
-    }
-  }, [isAuthenticated, navigate]);
-
-  // Função para simular login e redirecionar para o gerador de QR code.
-  const handleLogin = () => {
-    setIsAuthenticated(true);
-    navigate("/qrcode-generator");
-  };
-
-  // Função para simular logout e redirecionar para a página de login.
-  const handleLogout = () => {
-    setIsAuthenticated(false);
-    navigate("/");
-  };
-
-  // Alterna a visibilidade da barra de navegação.
+ 
   const toggleNavBar = () => {
     setIsNavBarOpen(!isNavBarOpen);
   };
 
-  // Função para definir o componente atual a ser exibido e atualizar o índice do carrossel.
-  const handleAccess = (index, component) => {
-    setCarouselIndex(index);
-    setCurrentComponent(component);
-  };
-
-  // Função para retornar ao carrossel principal.
-  const handleReturn = () => {
-    setCurrentComponent(null);
-  };
-
-  // Função para renderizar o componente atual com base no estado.
-  const renderComponent = () => {
-    switch (currentComponent) {
-      case "QRCodeGenerator":
-        return <QRCodeGenerator />;
-      case "IPAddressFinder":
-        return <IPAddressFinder />;
-      case "MovieSearchEngine":
-        return <MovieSearchEngine />;
-      case "TodoApp":
-        return <TodoApp />;
-      case "QuizApp":
-        return <QuizApp />;
-      case "LanguageTranslator":
-        return <LanguageTranslator />;
-      default:
-        return null;
-    }
-  };
-
-  // Renderiza o componente principal.
   return (
     <AppContainer>
       <NavBarToggle onClick={toggleNavBar}>
         <FaBars size={24} color="#2C3E50" />
       </NavBarToggle>
-      {!isAuthenticated ? (
-        <MainContent>
-          <Login onLogin={handleLogin} />
-        </MainContent>
-      ) : (
         <>
           <NavBar isOpen={isNavBarOpen}>
-            <StyledLink onClick={() => handleAccess(0, "QRCodeGenerator")}>
+            <StyledLink>
               <FaQrcode />
               QR Code Generator
             </StyledLink>
-            <StyledLink onClick={() => handleAccess(1, "IPAddressFinder")}>
+            <StyledLink>
               <FaNetworkWired />
               IP Address Finder
             </StyledLink>
-            <StyledLink onClick={() => handleAccess(2, "MovieSearchEngine")}>
+            <StyledLink>
               <FaSearch />
               Movie Search
             </StyledLink>
-            <StyledLink onClick={() => handleAccess(3, "TodoApp")}>
+            <StyledLink>
               <FaTasks />
               Todo App
             </StyledLink>
-            <StyledLink onClick={() => handleAccess(4, "QuizApp")}>
+            <StyledLink>
               <FaRegQuestionCircle />
               Quiz App
             </StyledLink>
-            <StyledLink onClick={() => handleAccess(5, "LanguageTranslator")}>
+            <StyledLink>
               <FaGlobeAmericas />
               Translator
             </StyledLink>
-            <button
-              onClick={handleLogout}
-              style={{
-                marginTop: "20px",
-                color: "white",
-                backgroundColor: "transparent",
-                border: "none",
-              }}
-            >
-              Logout
-            </button>
+            <button>Logout</button>
           </NavBar>
           <MainContent>
             {currentComponent ? (
@@ -319,43 +237,31 @@ const App = () => {
                 >
                   <CarouselItem>
                     <h2>QR Code Generator</h2>
-                    <button onClick={() => handleAccess(0, "QRCodeGenerator")}>
+                    <button>
                       Acessar
                     </button>
                   </CarouselItem>
                   <CarouselItem>
                     <h2>IP Address Finder</h2>
-                    <button onClick={() => handleAccess(1, "IPAddressFinder")}>
+                    <button>
                       Acessar
                     </button>
                   </CarouselItem>
                   <CarouselItem>
                     <h2>Movie Search Engine</h2>
-                    <button
-                      onClick={() => handleAccess(2, "MovieSearchEngine")}
-                    >
-                      Acessar
-                    </button>
+                    <button>Acessar</button>
                   </CarouselItem>
                   <CarouselItem>
                     <h2>Todo App</h2>
-                    <button onClick={() => handleAccess(3, "TodoApp")}>
-                      Acessar
-                    </button>
+                    <button>Acessar</button>
                   </CarouselItem>
                   <CarouselItem>
                     <h2>Quiz App</h2>
-                    <button onClick={() => handleAccess(4, "QuizApp")}>
-                      Acessar
-                    </button>
+                    <button>Acessar</button>
                   </CarouselItem>
                   <CarouselItem>
                     <h2>Language Translator</h2>
-                    <button
-                      onClick={() => handleAccess(5, "LanguageTranslator")}
-                    >
-                      Acessar
-                    </button>
+                    <button>Acessar</button>
                   </CarouselItem>
                 </CustomCarousel>
               </CarouselContainer>
@@ -363,10 +269,7 @@ const App = () => {
             <Footer>© 2024 Your Company | All rights reserved</Footer>
           </MainContent>
         </>
-      )}
     </AppContainer>
-  );
-};
-
-// Exporta o componente App para ser utilizado em outras partes da aplicação.
-export default App;
+  )
+}
+export default PaginaInicial;

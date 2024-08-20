@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import axios from 'axios'
 import styled from 'styled-components'
+import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Box = styled.div `
     padding-top: 1%;
@@ -37,6 +39,8 @@ const LanguageTranslator = () => {
     const [translatedText, setTranslatedText] = useState('')
     const [sourceLang, setSourceLang] = useState('en')
     const [targetLang, setTargetLang] = useState('pt')
+
+    const navigate = useNavigate()
 
     const translateText = async () => {
         try {
@@ -91,6 +95,7 @@ const LanguageTranslator = () => {
                 <button onClick={translateText}>Translate</button>
 
                 {translatedText && <TranslatedText>{translatedText}</TranslatedText>}
+                <Link to={'/'}><button>Sair</button></Link>
             </Container>
         </Box>
 

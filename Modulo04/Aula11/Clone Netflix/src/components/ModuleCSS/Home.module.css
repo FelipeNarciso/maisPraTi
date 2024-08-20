@@ -18,6 +18,7 @@
     transition: 0.3s ease;
 }
 
+
 .btnEntrar:hover{
     background-color: rgb(255, 0, 0, 0.8);
 }

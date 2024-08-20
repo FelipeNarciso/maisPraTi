@@ -18,6 +18,7 @@ function Home() {
                     </div>
                 </div>
 
+
                 <div className="text-white d-flex flex-column justify-content-center align-items-center text-center gap-3 p-5">
                     <h4 className="fs-1 fw-bolder">Filmes, séries e muito mais, sem limites</h4>
                     <h5>Assista onde quiser. Cancele quando quiser.</h5>

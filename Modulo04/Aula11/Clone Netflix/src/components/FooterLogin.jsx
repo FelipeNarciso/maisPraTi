@@ -1,6 +1,7 @@
 import styles from './ModuleCSS/FooterLogin.module.css'
 import { IoLanguage } from 'react-icons/io5'
 
+
 function FooterLogin() {
     return (
         <div className={`text-secondary bg-black ${styles.footer} d-flex flex-column ps-5`}>

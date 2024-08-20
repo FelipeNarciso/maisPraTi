@@ -46,9 +46,7 @@ function PaginaInicial() {
             }
         ]
     };
-
-
-
+    
     useEffect(() => {
         const searchApi = async () => {
             try {

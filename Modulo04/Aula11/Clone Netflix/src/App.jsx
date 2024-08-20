@@ -6,8 +6,6 @@ import PaginaInicial from './components/PaginaInicial'
 
 
 function App() {
-
-
   return (
     <>
       <Router>
