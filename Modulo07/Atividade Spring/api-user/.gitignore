@@ -31,3 +31,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+# Ignorar arquivos de configuração do Spring
+/src/main/resources/application.properties
+/src/main/resources/application.yml
