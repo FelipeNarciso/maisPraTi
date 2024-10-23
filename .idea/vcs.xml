@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modulo04/Aula09/multi-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Modulo04/Aula11/Clone Netflix" vcs="Git" />
   </component>
 </project>
