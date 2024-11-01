@@ -6,8 +6,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-import java.math.BigDecimal;
-
 @Entity
 @Data
 public class Produto {
@@ -16,6 +14,7 @@ public class Produto {
     private Long id;
     private String nome;
     private String descricao;
-    private BigDecimal preco;
+    private Float preco;
     private Integer quantidadeEstoque;
+
 }
