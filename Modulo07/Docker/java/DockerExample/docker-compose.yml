@@ -1,0 +1,23 @@
+version: '3,8'
+
+services:
+  api:
+    build:
+      ports:
+        - "8080:8080"
+      depends_on:
+        - mysql
+      environments:
+        - SPRING_DATASOURCE_URL
+        - SPRING_DATASOURCE_USERNAME=ROOT
+        - SPRING_DATASOURCE_PASSWORD=lf30072003
+
+  mysql:
+        image: mysql8.0
+        environment:
+          MYSQL_ROOT_PASSWORD: lf30072003
+          MYSQL_DATABASE: testDocker
+        ports:
+          - "3306:3306"
+        volumes:
+          - mysql-data:var/lib/mysql
